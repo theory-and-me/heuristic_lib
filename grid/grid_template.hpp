@@ -5,7 +5,7 @@ using namespace std;
 using ll = long long;
 
 template<typename T> // T は辺のコストの型
-struct grid_map{
+struct grid_template{
     const T T_INF = numeric_limits<T>::max();
     const int num_dirs =  4;
     const vector<int> dx = {0, -1, 0, 1};
@@ -19,7 +19,7 @@ struct grid_map{
     vector<T> access_array;
     bool array_flag = false;
 
-    grid_map(int H, int W): H(H), W(W){
+    grid_template(int H, int W): H(H), W(W){
         access.resize(H);
         for(int i=0;i<H;i++) access[i].resize(W);
         for(int i=0;i<H;i++) for(int j=0;j<W;j++) access[i][j].resize(num_dirs);

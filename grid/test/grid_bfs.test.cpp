@@ -1,4 +1,4 @@
-#define PROBLEM "https://atcoder.jp/contests/abc007/tasks/abc007_3"
+#define PROBLEM "https://onlinejudge.u-aizu.ac.jp/problems/0558"
 #include "../grid_template.hpp"
 
 #include <bits/stdc++.h>
@@ -6,33 +6,45 @@ using namespace std;
 using ll = long long;
 
 int main(){
-
-    int H, W, sx, sy, tx, ty;
-    cin >> H >> W >> sx >> sy >> tx >> ty;
-    sx--, sy--, tx--, ty--;
+    int H, W, N;
+    cin >> H >> W >> N;
     vector<string> S(H);
     for(int i=0;i<H;i++) cin >> S[i];
 
-    grid_map<int> G(H, W);
+    grid_template<int> G(H, W);
     for(int i=0;i<H;i++){
-        for(int j=0;j<H;j++){
-            if(S[i][j] == '#') continue;
+        for(int j=0;j<W;j++){
+            if(S[i][j] == 'X') continue;
             for(int k=0;k<(int)G.num_dirs;k++){
                 int nx = i + G.dx[k];
                 int ny = j + G.dy[k];
-                if(nx >= 0 and nx < H and ny >= 0 and ny < W and S[nx][ny] != '#'){
+                if(nx >= 0 and nx < H and ny >= 0 and ny < W and S[nx][ny] != 'X'){
                     G.access[i][j][k] = 1;
                 }
             }
         }
     }
 
-    auto dist = G.bfs(sx, sy);
-    cout << dist[tx][ty] << endl;
+    vector<int> xs(N+1), ys(N+1);
+    for(int i=0;i<H;i++){
+        for(int j=0;j<W;j++){
+            if(S[i][j] == 'S'){
+                xs[0] = i;
+                ys[0] = j;
+            }else if(S[i][j] != 'X' and S[i][j] != '.'){
+                xs[S[i][j] - '0'] = i;
+                ys[S[i][j] - '0'] = j;
+            }
+        }
+    }
 
-    // ルート復元
-    // auto [dist, route] = G.bfs_reconstruction(sx, sy, tx, ty);
-    // cout << route << endl;
+    int res = 0;
+    for(int i=0;i<N;i++){
+        auto dist = G.bfs(xs[i], ys[i]);
+        res += dist[xs[i+1]][ys[i+1]];
+    }
+
+    cout << res << endl;
 
     return 0;
 }
