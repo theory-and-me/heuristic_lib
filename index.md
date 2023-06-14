@@ -25,6 +25,9 @@ data:
       path: score/interactive/calc_score.py
       title: score/interactive/calc_score.py
     - icon: ':warning:'
+      path: score/interactive/parallel_score.py
+      title: score/interactive/parallel_score.py
+    - icon: ':warning:'
       path: score/interactive/single_run.py
       title: score/interactive/single_run.py
   - name: score/non_interactive
