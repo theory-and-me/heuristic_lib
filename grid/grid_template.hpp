@@ -6,7 +6,7 @@ using ll = long long;
 
 template<typename T> // T は辺のコストの型
 struct grid_template{
-    const T T_INF = numeric_limits<T>::max();
+    const T T_INF = numeric_limits<T>::max() / 2;
     const int num_dirs =  4;
     const vector<int> dx = {0, -1, 0, 1};
     const vector<int> dy = {-1, 0, 1, 0};
