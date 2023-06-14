@@ -51,10 +51,10 @@ data:
     \  std::swap(sz, a.sz), std::swap(last, a.last), v.swap(a.v);\n    }\n};\n#line\
     \ 2 \"grid/grid_template.hpp\"\n\n#include <bits/stdc++.h>\nusing namespace std;\n\
     using ll = long long;\n\ntemplate<typename T> // T \u306F\u8FBA\u306E\u30B3\u30B9\
-    \u30C8\u306E\u578B\nstruct grid_template{\n    const T T_INF = numeric_limits<T>::max();\n\
-    \    const int num_dirs =  4;\n    const vector<int> dx = {0, -1, 0, 1};\n   \
-    \ const vector<int> dy = {-1, 0, 1, 0};\n    const vector<char> dc = {'L', 'U',\
-    \ 'R', 'D'};\n\n    // H: \u7E26\u306E\u9577\u3055 W: \u6A2A\u306E\u9577\u3055\
+    \u30C8\u306E\u578B\nstruct grid_template{\n    const T T_INF = numeric_limits<T>::max()\
+    \ / 2;\n    const int num_dirs =  4;\n    const vector<int> dx = {0, -1, 0, 1};\n\
+    \    const vector<int> dy = {-1, 0, 1, 0};\n    const vector<char> dc = {'L',\
+    \ 'U', 'R', 'D'};\n\n    // H: \u7E26\u306E\u9577\u3055 W: \u6A2A\u306E\u9577\u3055\
     \n    // access: \u79FB\u52D5\u30B3\u30B9\u30C8\u3092\u8868\u73FE\u3059\u308B\
     3\u6B21\u5143\u914D\u5217\uFF0Eaccess[x][y][dir] \u306F\u30DE\u30B9(x, y)\u304B\
     \u3089\u65B9\u5411dir\u306B\u9032\u3080\u3068\u304D\u306E\u30B3\u30B9\u30C8\u3092\
@@ -195,7 +195,7 @@ data:
   isVerificationFile: true
   path: grid/test/grid_bfs.test.cpp
   requiredBy: []
-  timestamp: '2023-06-14 01:33:30+09:00'
+  timestamp: '2023-06-14 21:49:36+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: grid/test/grid_bfs.test.cpp
