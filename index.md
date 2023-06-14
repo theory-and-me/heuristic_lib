@@ -11,7 +11,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: graph/Dijkstra.hpp
       title: graph/Dijkstra.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: graph/Dijkstra_radix_heap.hpp
       title: graph/Dijkstra_radix_heap.hpp
   - name: graph/test
@@ -30,7 +30,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: graph/test/Dijkstra.test.cpp
       title: graph/test/Dijkstra.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: graph/test/Dijkstra_radix_heap.test.cpp
       title: graph/test/Dijkstra_radix_heap.test.cpp
   - name: grid/test

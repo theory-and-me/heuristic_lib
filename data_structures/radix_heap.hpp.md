@@ -3,9 +3,15 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy:
   - icon: ':heavy_check_mark:'
+    path: graph/Dijkstra_radix_heap.hpp
+    title: graph/Dijkstra_radix_heap.hpp
+  - icon: ':heavy_check_mark:'
     path: grid/grid_template.hpp
     title: grid/grid_template.hpp
   _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: graph/test/Dijkstra_radix_heap.test.cpp
+    title: graph/test/Dijkstra_radix_heap.test.cpp
   - icon: ':heavy_check_mark:'
     path: grid/test/grid_Dijkstra.test.cpp
     title: grid/test/grid_Dijkstra.test.cpp
@@ -85,10 +91,12 @@ data:
   isVerificationFile: false
   path: data_structures/radix_heap.hpp
   requiredBy:
+  - graph/Dijkstra_radix_heap.hpp
   - grid/grid_template.hpp
   timestamp: '2023-06-14 00:05:37+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - graph/test/Dijkstra_radix_heap.test.cpp
   - grid/test/grid_bfs.test.cpp
   - grid/test/grid_Dijkstra.test.cpp
 documentation_of: data_structures/radix_heap.hpp
