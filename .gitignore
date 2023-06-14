@@ -1,0 +1,10 @@
+*.slo
+*.lo
+*.o
+*.obj
+
+*.out
+*.dSYM
+
+.vscode
+.DS_Store
