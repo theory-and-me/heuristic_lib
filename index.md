@@ -14,11 +14,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: graph/Dijkstra_radix_heap.hpp
       title: graph/Dijkstra_radix_heap.hpp
-  - name: graph/test
-    pages:
-    - icon: ':warning:'
-      path: graph/test/submit.cpp
-      title: graph/test/submit.cpp
   - name: grid
     pages:
     - icon: ':heavy_check_mark:'
