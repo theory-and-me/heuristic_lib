@@ -19,6 +19,22 @@ data:
     - icon: ':heavy_check_mark:'
       path: grid/grid_template.hpp
       title: grid/grid_template.hpp
+  - name: score/interactive
+    pages:
+    - icon: ':warning:'
+      path: score/interactive/calc_score.py
+      title: score/interactive/calc_score.py
+    - icon: ':warning:'
+      path: score/interactive/single_run.py
+      title: score/interactive/single_run.py
+  - name: score/non_interactive
+    pages:
+    - icon: ':warning:'
+      path: score/non_interactive/calc_score.py
+      title: score/non_interactive/calc_score.py
+    - icon: ':warning:'
+      path: score/non_interactive/single_run.py
+      title: score/non_interactive/single_run.py
   verificationCategories:
   - name: graph/test
     pages:
