@@ -19,6 +19,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: grid/grid_template.hpp
       title: grid/grid_template.hpp
+  - name: random
+    pages:
+    - icon: ':warning:'
+      path: random/xorshift.hpp
+      title: random/xorshift.hpp
   - name: score/interactive
     pages:
     - icon: ':warning:'
@@ -38,6 +43,11 @@ data:
     - icon: ':warning:'
       path: score/non_interactive/single_run.py
       title: score/non_interactive/single_run.py
+  - name: utils
+    pages:
+    - icon: ':warning:'
+      path: utils/annealing.cpp
+      title: utils/annealing.cpp
   verificationCategories:
   - name: graph/test
     pages:

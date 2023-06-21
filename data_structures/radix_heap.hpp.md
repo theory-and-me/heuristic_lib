@@ -91,14 +91,14 @@ data:
   isVerificationFile: false
   path: data_structures/radix_heap.hpp
   requiredBy:
-  - grid/grid_template.hpp
   - graph/Dijkstra_radix_heap.hpp
+  - grid/grid_template.hpp
   timestamp: '2023-06-14 00:05:37+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - grid/test/grid_Dijkstra.test.cpp
-  - grid/test/grid_bfs.test.cpp
   - graph/test/Dijkstra_radix_heap.test.cpp
+  - grid/test/grid_bfs.test.cpp
+  - grid/test/grid_Dijkstra.test.cpp
 documentation_of: data_structures/radix_heap.hpp
 layout: document
 redirect_from:
