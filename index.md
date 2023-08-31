@@ -14,6 +14,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: graph/Dijkstra_radix_heap.hpp
       title: graph/Dijkstra_radix_heap.hpp
+    - icon: ':heavy_check_mark:'
+      path: graph/low_link.hpp
+      title: graph/low_link.hpp
   - name: grid
     pages:
     - icon: ':heavy_check_mark:'
@@ -57,6 +60,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: graph/test/Dijkstra_radix_heap.test.cpp
       title: graph/test/Dijkstra_radix_heap.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: graph/test/articulation_points.test.cpp
+      title: graph/test/articulation_points.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: graph/test/bridges.test.cpp
+      title: graph/test/bridges.test.cpp
   - name: grid/test
     pages:
     - icon: ':heavy_check_mark:'
