@@ -43,7 +43,6 @@ int main() {
         } else {
             cout << "stay\n";
         }
-
         cnt++;
     }
     cerr << cnt << "\n";
