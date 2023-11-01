@@ -28,12 +28,6 @@ struct IndexSet {
         _pos[b] = p;
         _pos[v] = -1;
     }
-    int random_pop() {
-        assert(!vec.empty());
-        int v = myrand.choice(vec);
-        remove(v);
-        return v;
-    }
     bool contains(int v) const {
         return _pos[v] != -1;
     }
